@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form Assignment</title>
+    <link rel="shortcut icon" href="..//htmlConcepts/image.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="mainContainer">
+        <div class="headingContainer">
+            <h1 style="text-align: center;"><b>Student Progress Form</b></h1>
+        </div>
+        <hr>
+        <form action="/server" class="mainForm">
+            <label for="studentName">Student's Name: </label>
+            <input type="text" name="studentname" id="studentName" placeholder="Enter student's name">
+            <br>
+            <br>
+            <label for="fatherName">Father's Name: </label>
+            <input type="text" name="fathername" id="fatherName" placeholder="Enter father's name">
+            <br>
+            <br>
+            <label for="motherName">Mother's Name: </label>
+            <input type="text" name="mothername" id="motherName" placeholder="Enter mother's name">
+            <br>
+            <br>
+            <label for="gender">Gender: </label>
+            <input type="radio" name="studentgender" id="male" value="m">
+            <label for="gender">Male</label>
+            <input type="radio" name="studentgender" id="female" value="f">
+            <label for="gender">Female</label>
+            <input type="radio" name="studentgender" id="trans" value="t">
+            <label for="gender">Trans</label>
+            <br>
+            <br>
+            <label for="standard">Student's Class:</label>
+            <input type="number" value="std" id="standard" name="std">
+            <label for="section">Student's Section: </label>
+            <input type="text" id="section" name="sec">
+            <br>
+            <br>
+            <label for="currentAge">Student's Age: </label>
+            <input type="number" name="currentAge" id="currentAge" placeholder="Enter age (only num)">
+            <br>
+            <br>
+            <label for="email">Student's Email</label>
+            <input type="email" name="email" id="email" placeholder="abc@gmail.com">
+            <br>
+            <br>
+            <label for="address">Residential Address: </label>
+            <textarea name="add" id="address" rows="2" cols="80"></textarea>
+            <br>
+            <br>
+            <label for="state">State: </label>
+            <select name="state" id="state">
+                <option>Select Your State</option>
+                <option value="DL">Delhi</option>
+                <option value="PB">Punjab</option>
+                <option value="MP">Madhya Pradesh</option>
+            </select>
+            <br>
+            <br>
+            <label>Subjects Enrolled in: </label>
+            <input type="checkbox" name="sub" id="english" value="e">
+            <label for="english">English</label>
+            <input type="checkbox" name="sub" id="hindi" value="h">
+            <label for="hindi">Hindi</label>
+            <input type="checkbox" name="sub" id="physics" value="p">
+            <label for="physics">Physics</label>
+            <input type="checkbox" name="sub" id="chemistry" value="c">
+            <label for="chemistry">Chemistry</label>
+            <input type="checkbox" name="sub" id="maths" value="m">
+            <label for="maths">Maths</label>
+            <input type="checkbox" name="sub" id="pe" value="pe">
+            <label for="pe">Physical Education</label>
+
+            <br>
+            <br>
+            <label for="percentage">Percentage Obtained: </label>
+            <input type="range" name="per" id="percentage" min="0" max="100">
+            <br>
+            <br>
+            <input type="checkbox" id="verify">
+            <label for="verify">Please, check again that all the information entered by you is correct or not.</label>
+            <br>
+            <br>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </form>
+    </div>
+</body>
+
+</html>

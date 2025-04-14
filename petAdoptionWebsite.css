@@ -28,3 +28,9 @@
     display: flex;
     justify-content: space-evenly;
   }
+
+  @media (max-width:412px) {
+    #pets{
+      flex-wrap: wrap;
+    }
+  }
